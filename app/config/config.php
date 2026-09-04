@@ -79,7 +79,11 @@ $config['environment'] = getenv('APP_ENV') ?: 'development';
 | WARNING: You MUST set this value!
 |
 */
+<<<<<<< HEAD
 $config['base_url'] = 'https://simple-webapplication.onrender.com/';
+=======
+$config['base_url'] 				= '';
+>>>>>>> f50ac1f4851176fe80dabd3244a37194d8058ba5
 
 /*
 |--------------------------------------------------------------------------

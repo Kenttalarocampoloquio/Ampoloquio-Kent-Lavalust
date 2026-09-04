@@ -3,7 +3,11 @@
 > A lightweight, fast PHP framework built for developers who want clean MVC architecture without unnecessary complexity or performance overhead.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+<<<<<<< HEAD
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D7.4-8892BF)](https://www.php.net/) 
+=======
+[![PHP Version](https://img.shields.io/badge/PHP-%3E%3D7.4-8892BF)](https://www.php.net/)
+>>>>>>> f50ac1f4851176fe80dabd3244a37194d8058ba5
 [![GitHub Stars](https://img.shields.io/github/stars/ronmarasigan/lavalust?style=flat)](https://github.com/ronmarasigan/lavalust/stargazers)
 
 ---
@@ -281,4 +285,8 @@ LavaLust Framework is open-source software licensed under the **[MIT License](ht
 
 - **GitHub Repository:** [https://github.com/ronmarasigan/lavalust](https://github.com/ronmarasigan/lavalust)
 - **Documentation:** [https://lavalust.netlify.app](https://lavalust.netlify.app)
+<<<<<<< HEAD
 - **Report an Issue:** [https://github.com/ronmarasigan/lavalust/issues](https://github.com/ronmarasigan/lavalust/issues)
+=======
+- **Report an Issue:** [https://github.com/ronmarasigan/lavalust/issues](https://github.com/ronmarasigan/lavalust/issues)
+>>>>>>> f50ac1f4851176fe80dabd3244a37194d8058ba5
