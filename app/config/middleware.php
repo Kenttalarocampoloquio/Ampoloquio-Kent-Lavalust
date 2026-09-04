@@ -1,10 +1,7 @@
 <?php
 defined('PREVENT_DIRECT_ACCESS') OR exit('No direct script access allowed');
-<<<<<<< HEAD
 
 require_once APP_DIR . 'middlewares/StudentMiddleware.php';
-=======
->>>>>>> f50ac1f4851176fe80dabd3244a37194d8058ba5
 /**
  * ------------------------------------------------------------------
  * LavaLust - an opensource lightweight PHP MVC Framework
@@ -46,9 +43,5 @@ require_once APP_DIR . 'middlewares/StudentMiddleware.php';
 | Used for adding middlewares
 |
 */
-<<<<<<< HEAD
 $config['middlewares'] = ['student_access' => new StudentMiddleware(),
 ];
-=======
-$config['middlewares'] = [];
->>>>>>> f50ac1f4851176fe80dabd3244a37194d8058ba5
