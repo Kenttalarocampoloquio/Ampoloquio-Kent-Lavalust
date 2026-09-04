@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Act1</title>
+  </head>
+  <body>
+    <h2>Event Driven Programming</h2>
+    <button id="btn1">click me</button>
+    <button id="btn2">hover over me</button>
+    <button id="btn3">double click me</button>
+
+    <h2>Custom event</h2>
+    <button id="btn4">trigger custom event</button>
+
+    <h2>Event Bubbling and Capturing</h2>
+    <div id="parent">Parent DIV
+    <button id="child">child button</button>
+        </div>
+
+    <script>
+        var button1 = document.getElementById("btn1");
+        button1.addEventListener("click", function(){
+            alert("button click");
+        });
+
+        var button2 = document.getElementById("btn2");
+        button2.addEventListener("mouseover", function(){
+            alert("Mouse is here");
+        });
+        
+        var button3 = document.getElementById("btn3");
+        button3.addEventListener("dblclick", function(){
+            alert("double click");
+        });
+
+        var event = new Event("event");
+        document.addEventListener("event", function(){
+            console.log("custom event triggered");
+        });
+
+        var button4 = document.getElementById("btn4");
+        button4.addEventListener("click", function(){
+            document.dispatchEvent(event);
+        });
+
+        let parent = document.getElementById("parent");
+        let child = document.getElementById("child");
+                
+        parent.addEventListener("click", function(){
+            console.log("parent clicked");
+        }, true);
+        child.addEventListener("click", function(){
+            console.log("child clicked");
+        }, false);
+    </script>
+  </body>
+</html>
