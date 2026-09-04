@@ -42,6 +42,9 @@
             font-size: 0.9rem;
         }
         header a:hover { color: #ff6b35; }
+        nav { display: flex; gap: 24px; align-items: center; }
+        nav a { color: #666; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { color: #ff6b35; }
         main {
             max-width: 640px;
             margin: 48px auto;
@@ -117,6 +120,11 @@
 <body>
     <header>
         <div class="logo">Student<span>&nbsp;Profile</span></div>
+        <nav>
+            <a href="<?= site_url('student') ?>">Student</a>
+            <a href="<?= site_url('student/profile') ?>">Profile</a>
+            <a href="<?= site_url('users') ?>">Users</a>
+        </nav>
     </header>
     <main>
         <div class="name-block">

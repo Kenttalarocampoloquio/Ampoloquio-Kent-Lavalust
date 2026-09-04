@@ -24,6 +24,9 @@
         }
         .logo { font-weight: 800; font-size: 1.2rem; }
         .logo span { color: #ff6b35; }
+        nav { display: flex; gap: 24px; align-items: center; }
+        nav a { color: #666; text-decoration: none; font-size: 0.9rem; }
+        nav a:hover { color: #ff6b35; }
         main {
             flex: 1;
             display: flex;
@@ -62,6 +65,11 @@
 <body>
     <header>
         <div class="logo">Student<span>&nbsp;Home</span></div>
+        <nav>
+            <a href="<?= site_url('student') ?>">Student</a>
+            <a href="<?= site_url('student/profile') ?>">Profile</a>
+            <a href="<?= site_url('users') ?>">Users</a>
+        </nav>
     </header>
     <main>
         <h1>Mabuhay Mahaltana!<br>Welcome sa aking student page.</h1>
