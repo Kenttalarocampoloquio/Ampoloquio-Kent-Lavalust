@@ -79,7 +79,7 @@ $config['environment'] = getenv('APP_ENV') ?: 'development';
 | WARNING: You MUST set this value!
 |
 */
-$config['base_url'] = 'https://ampoloquio-kent.onrender.com/';
+$config['base_url'] = getenv('APP_URL') ?: 'http://localhost:8000/';
 
 /*
 |--------------------------------------------------------------------------

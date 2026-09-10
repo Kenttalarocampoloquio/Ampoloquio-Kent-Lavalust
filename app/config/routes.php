@@ -52,3 +52,15 @@ $router->get('/', 'Welcome::index');
 $router->get('/student', 'StudentController::index');
 $router->get('/student/profile', 'StudentController::profile')->middleware('student_access');
 $router->get('/users', 'UsersController::index');
+
+$router->get('/login', 'AuthController::login');
+$router->post('/login', 'AuthController::login');
+$router->get('/logout', 'AuthController::logout');
+
+$router->get('/products', 'ProductController::index')->middleware('auth');
+$router->get('/products/create', 'ProductController::create')->middleware('auth');
+$router->post('/products/create', 'ProductController::create')->middleware('auth');
+$router->get('/products/edit', 'ProductController::edit')->middleware('auth');
+$router->post('/products/edit', 'ProductController::edit')->middleware('auth');
+$router->get('/products/delete', 'ProductController::delete')->middleware('auth');
+
