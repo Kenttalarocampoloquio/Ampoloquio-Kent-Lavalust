@@ -60,3 +60,9 @@ $router->get('/products/edit', 'ProductController::edit')->middleware('auth');
 $router->post('/products/edit', 'ProductController::edit')->middleware('auth');
 $router->get('/products/delete', 'ProductController::delete')->middleware('auth');
 
+$router->get('create-migration/{migration_class}', 'MigrationController::create_migration');
+$router->get('migrate', 'MigrationController::migrate');
+$router->get('rollback', 'MigrationController::rollback');
+$router->get('rollback-all', 'MigrationController::rollback_all');
+$router->get('refresh', 'MigrationController::refresh');
+$router->get('status', 'MigrationController::status');
