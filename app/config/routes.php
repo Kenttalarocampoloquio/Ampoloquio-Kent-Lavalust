@@ -49,10 +49,6 @@ $router->get('/', 'Welcome::index');
     require APP_DIR . 'config/middleware.php';
     get_config($config);
 })();
-$router->get('/student', 'StudentController::index');
-$router->get('/student/profile', 'StudentController::profile')->middleware('student_access');
-$router->get('/users', 'UsersController::index');
-
 $router->get('/login', 'AuthController::login');
 $router->post('/login', 'AuthController::login');
 $router->get('/logout', 'AuthController::logout');
