@@ -66,3 +66,17 @@ $router->get('rollback', 'MigrationController::rollback');
 $router->get('rollback-all', 'MigrationController::rollback_all');
 $router->get('refresh', 'MigrationController::refresh');
 $router->get('status', 'MigrationController::status');
+// ---------------------------------------------------------------
+// JSON API (consumed by the React/Vue frontend)
+// OPTIONS is included so CORS preflight requests succeed.
+// ---------------------------------------------------------------
+$router->match('api/register', 'ApiAuthController::register', ['POST', 'OPTIONS']);
+$router->match('api/login',    'ApiAuthController::login',    ['POST', 'OPTIONS']);
+$router->match('api/refresh',  'ApiAuthController::refresh',  ['POST', 'OPTIONS']);
+$router->match('api/logout',   'ApiAuthController::logout',   ['POST', 'OPTIONS']);
+
+$router->match('api/products',        'ApiProductController::index',  ['GET', 'OPTIONS']);
+$router->match('api/products',        'ApiProductController::store',  ['POST', 'OPTIONS']);
+$router->match('api/products/{id}',   'ApiProductController::show',   ['GET', 'OPTIONS']);
+$router->match('api/products/{id}',   'ApiProductController::update', ['PUT', 'PATCH', 'OPTIONS']);
+$router->match('api/products/{id}',   'ApiProductController::destroy',['DELETE', 'OPTIONS']);
