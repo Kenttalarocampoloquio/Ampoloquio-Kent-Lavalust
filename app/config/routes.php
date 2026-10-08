@@ -66,10 +66,7 @@ $router->get('rollback', 'MigrationController::rollback');
 $router->get('rollback-all', 'MigrationController::rollback_all');
 $router->get('refresh', 'MigrationController::refresh');
 $router->get('status', 'MigrationController::status');
-// ---------------------------------------------------------------
-// JSON API (consumed by the React/Vue frontend)
-// OPTIONS is included so CORS preflight requests succeed.
-// ---------------------------------------------------------------
+
 $router->match('api/register', 'ApiAuthController::register', ['POST', 'OPTIONS']);
 $router->match('api/login',    'ApiAuthController::login',    ['POST', 'OPTIONS']);
 $router->match('api/refresh',  'ApiAuthController::refresh',  ['POST', 'OPTIONS']);
