@@ -96,7 +96,7 @@ $config['refresh_token_key'] = getenv('REFRESH_TOKEN_KEY') ?: '';
 | already deployed.
 |
 */
-$config['allow_origin'] = getenv('ALLOW_ORIGIN') ? array_map('trim', explode(',', getenv('ALLOW_ORIGIN'))) : '*';
+$config['allow_origin'] = getenv('ALLOW_ORIGIN') ? array_map('trim', explode(',', getenv('ALLOW_ORIGIN'))) : 'https://ampoloquio-kent-react.onrender.com/';
 
 /*
 |--------------------------------------------------------------------------

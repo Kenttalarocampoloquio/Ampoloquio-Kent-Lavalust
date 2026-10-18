@@ -71,6 +71,7 @@ $router->match('api/register', 'ApiAuthController::register', ['POST', 'OPTIONS'
 $router->match('api/login',    'ApiAuthController::login',    ['POST', 'OPTIONS']);
 $router->match('api/refresh',  'ApiAuthController::refresh',  ['POST', 'OPTIONS']);
 $router->match('api/logout',   'ApiAuthController::logout',   ['POST', 'OPTIONS']);
+$router->match('api/latest-products', 'ApiPublicController::latest', ['GET', 'OPTIONS']);
 
 $router->match('api/products',        'ApiProductController::index',  ['GET', 'OPTIONS']);
 $router->match('api/products',        'ApiProductController::store',  ['POST', 'OPTIONS']);
